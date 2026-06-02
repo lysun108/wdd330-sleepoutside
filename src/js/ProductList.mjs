@@ -1,12 +1,21 @@
 import { renderListWithTemplate } from "./utils.mjs";
 
+const productPages = {
+  "985PR": "cedar-ridge-rimrock-2.html",
+  "344YJ": "marmot-ajax-3.html",
+  "880RT": "northface-alpine-3.html",
+  "985RF": "northface-talus-4.html",
+};
+
 function productCardTemplate(product) {
   const imageSrc = product.Image.startsWith("/")
     ? product.Image
     : `/${product.Image}`;
 
+  const pageFile = productPages[product.Id];
+
   return `<li class="product-card">
-    <a href="product_pages/?product=${product.Id}">
+    <a href="/product_pages/${pageFile}">
       <img
         src="${imageSrc}"
         alt="Image of ${product.Name}"
