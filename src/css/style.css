@@ -279,14 +279,19 @@ footer {
   font-size: var(--small-font);
   padding: 1em;
 }
-/* Homepage intro section */
-.home-intro {
+/* Homepage call-to-action section */
+.home-cta {
   padding: 3rem 1rem 2rem;
   text-align: center;
   background-color: #fafafa;
 }
 
-.home-intro h2 {
+.home-cta__content {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.home-cta h2 {
   margin-bottom: 0.75rem;
   color: var(--secondary-color);
   font-family: var(--font-headline);
@@ -294,18 +299,36 @@ footer {
   letter-spacing: 1px;
 }
 
-.home-intro > p {
+.home-cta p {
   max-width: 700px;
   margin: 0 auto 1.5rem;
   line-height: 1.6;
   padding: 0.75rem;
 }
 
-.benefits {
+.home-cta__button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.home-cta__button:hover {
+  background-color: var(--tertiary-color);
+  transform: translateY(-2px);
+}
+
+/* Homepage benefits section */
+.home-benefits {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1rem;
-  margin-top: 1.5rem;
+  padding: 2rem 1rem;
+  background-color: #fff;
 }
 
 .benefit-card {
@@ -314,6 +337,7 @@ footer {
   border-radius: 10px;
   background-color: white;
   box-shadow: 1px 1px 4px var(--light-grey);
+  text-align: center;
 }
 
 .benefit-card h3 {
@@ -324,4 +348,23 @@ footer {
 .benefit-card p {
   padding: 0;
   line-height: 1.5;
+}
+
+@media screen and (max-width: 500px) {
+  .home-cta {
+    padding: 2rem 1rem 1.5rem;
+  }
+
+  .home-cta h2 {
+    font-size: 1.6rem;
+  }
+
+  .home-cta__button {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .home-benefits {
+    padding: 1.5rem 1rem;
+  }
 }
