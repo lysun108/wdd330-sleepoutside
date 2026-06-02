@@ -13,8 +13,9 @@
         <img src="/images/noun_Tent_2517.svg" alt="tent image for logo" />
         <a href="index.html"> Sleep<span class="highlight">Outside</span></a>
       </div>
+
       <div class="cart">
-        <a href="cart/index.html">
+        <a href="cart/index.html" aria-label="View shopping cart">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
             <path
               d="M18.9 32.6c1.1 2.4 2.5 3.3 5.4 3.3 1.6 0 3.6-0.3 5.9-0.6 3.2-0.5 6.9-1 11.2-1 2.1 0 4.3 0.1 6.4 0.3 2.1 0.1 4.2 0.3 6.1 0.3 3.2 0 5.2-0.4 5.9-1.2 2.7-2.7 2.8-8.8 2.9-14.6 0.1-6.7 0.2-14.5 4.6-18.7 -0.5 0-1 0-1.6 0 -14.2 0-37.5 0-41.1 0C15.6 6.2 14.9 23.6 18.9 32.6z"
@@ -43,13 +44,15 @@
       <div class="hero">
         <img
           src="/images/banner-sm.jpg"
-          srcset="images/banner-sm.jpg 500w, images/banner.jpg"
+          srcset="/images/banner-sm.jpg 500w, /images/banner.jpg"
           alt="image of a high mountain lake"
         />
+
         <div class="logo logo--square">
           <img src="/images/noun_Tent_2517.svg" alt="tent image for logo" />
           <div>Sleep<span class="highlight">Outside</span></div>
         </div>
+
         <div class="mission">
           <p>
             Our mission is to provide you with everything you need to sleep
@@ -58,42 +61,45 @@
         </div>
       </div>
 
-      <section class="home-intro">
-        <h2>Get Ready for Your Next Adventure</h2>
-        <p>
-          SleepOutside helps outdoor lovers find affordable and comfortable gear
-          for camping, hiking, and weekend trips. Our goal is to make it easier
-          for everyone to enjoy nature and sleep well outside.
-        </p>
-
-        <div class="benefits">
-          <div class="benefit-card">
-            <h3>Comfortable Gear</h3>
-            <p>
-              Find products designed to help you rest better while spending time
-              outdoors.
-            </p>
-          </div>
-
-          <div class="benefit-card">
-            <h3>Affordable Prices</h3>
-            <p>
-              Shop useful outdoor equipment without spending too much on your
-              next trip.
-            </p>
-          </div>
-
-          <div class="benefit-card">
-            <h3>Easy Shopping</h3>
-            <p>
-              Browse top products and quickly find the items you need for your
-              adventure.
-            </p>
-          </div>
+      <section class="home-cta">
+        <div class="home-cta__content">
+          <h2>Get Ready for Your Next Adventure</h2>
+          <p>
+            SleepOutside helps outdoor lovers find affordable and comfortable
+            gear for camping, hiking, and weekend trips. Our goal is to make it
+            easier for everyone to enjoy nature and sleep well outside.
+          </p>
+          <a class="home-cta__button" href="#top-products">Shop Top Products</a>
         </div>
       </section>
 
-      <section class="products">
+      <section class="home-benefits" aria-label="Shopping benefits">
+        <div class="benefit-card">
+          <h3>Comfortable Gear</h3>
+          <p>
+            Find products designed to help you rest better while spending time
+            outdoors.
+          </p>
+        </div>
+
+        <div class="benefit-card">
+          <h3>Affordable Prices</h3>
+          <p>
+            Shop useful outdoor equipment without spending too much on your next
+            trip.
+          </p>
+        </div>
+
+        <div class="benefit-card">
+          <h3>Easy Shopping</h3>
+          <p>
+            Browse top products and quickly find the items you need for your
+            adventure.
+          </p>
+        </div>
+      </section>
+
+      <section class="products" id="top-products">
         <h2>Top Products</h2>
         <ul class="product-list"></ul>
       </section>
@@ -104,6 +110,6 @@
       Worldwide Online
     </footer>
 
-    <script src="js/main.js" type="module"></script>
+    <script src="/js/main.js" type="module"></script>
   </body>
 </html>
