@@ -368,3 +368,74 @@ footer {
     padding: 1.5rem 1rem;
   }
 }
+/* Newsletter sign up section */
+.newsletter {
+  padding: 2rem 1rem;
+  background-color: #f7f4ef;
+  text-align: center;
+}
+
+.newsletter__content {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.newsletter h2 {
+  margin-bottom: 0.75rem;
+  color: var(--secondary-color);
+  font-family: var(--font-headline);
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.newsletter p {
+  line-height: 1.6;
+}
+
+.newsletter__form {
+  margin-top: 1rem;
+}
+
+.newsletter__form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.newsletter__input-group {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.newsletter__input-group input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid var(--light-grey);
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.newsletter__input-group button {
+  margin: 0;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.newsletter__message {
+  margin-top: 0.75rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+@media screen and (max-width: 500px) {
+  .newsletter__input-group {
+    flex-direction: column;
+  }
+
+  .newsletter__input-group button {
+    width: 100%;
+  }
+}
